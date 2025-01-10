@@ -1,0 +1,23 @@
+projection;
+
+define behavior for ZRAP400_C_Travel_0002 alias Travel
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Booking { create; }
+
+  use action acceptTravel;
+  use action rejectTravel;
+}
+
+define behavior for ZRAP400_C_Book_0002 alias Booking
+use etag
+{
+  use update;
+  use delete;
+
+  use association _Travel;
+}

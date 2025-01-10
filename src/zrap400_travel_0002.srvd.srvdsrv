@@ -1,0 +1,10 @@
+@ObjectModel.leadingEntity.name: 'ZRAP400_C_Travel_0002'
+define service ZRAP400_Travel_0002 {
+  expose ZRAP400_C_TRAVEL_0002 as Travel;
+  expose ZRAP400_C_BOOK_0002 as Booking;
+  expose /DMO/I_CONNECTION as Connection;
+  expose /DMO/I_FLIGHT as Flight;
+  expose /DMO/I_CARRIER as Airline;
+  expose I_CURRENCY as Currency;
+  expose /DMO/I_CUSTOMER as Customer;
+}
